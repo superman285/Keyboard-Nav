@@ -1,0 +1,71 @@
+
+/*CSS RESET*/
+html,body,dl,dt,dd,ul,ol,li,form,input,p,th,td,h1,h2,h3,h4,h5,h6 {
+    margin:0;
+    padding:0;
+    font-family:"微软雅黑";
+}
+
+ul,ol,dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*键盘样式*/
+
+main {
+    margin-top: 100px;
+}
+
+#kbd_rowWrapper {
+    text-align: center;
+}
+
+#kbd_rowWrapper>div {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    display: inline-block;
+}
+
+kbd {
+    font-size: 2rem;
+    display: inline-block;
+    border: 1px solid dodgerblue;
+    box-sizing: border-box;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 2.5em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: 700;
+    color: violet;
+    margin-right: 5px;
+    box-shadow: 2px 2px 5px 1px lightgrey;
+    position: relative;
+}
+
+#kbd_rowWrapper>div:last-child>kbd:last-child {
+    margin-right: 3em;
+}
+
+kbd>button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1px 1px lightgrey;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    display: none;
+}
+kbd:hover>button {
+    display: inline-block;
+}
+
+
+
