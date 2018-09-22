@@ -20,7 +20,7 @@ monitorKeyboard();
 function init() {
     //1.初始化数据内容，包括键盘按键和按键对应网站
     var keyMap = {
-        0: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
+        0: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0,''],
         1: ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
         2: ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'],
         '3': ['z', 'x', 'c', 'v', 'b', 'n', 'm']
@@ -155,7 +155,7 @@ function generateKeyboard() {
         var kbd_row = document.createElement("div");
         kbd_row.className = 'kbd_row';
 
-        var kbd_rowsWrapper = document.getElementById("kbd_rowsWrapper");
+        var kbd_rowsWrapper = document.getElementById("kbd-rowsWrapper");
         //也可以直接使用id，不用getElementById，即省略以上这句
         kbd_rowsWrapper.appendChild(kbd_row);
 
@@ -186,7 +186,6 @@ function monitorKeyboard() {
     //监听键盘按键事件
     document.onkeypress = function (pressEvent) {
 
-
         var pressKey = pressEvent.key;
 
         var press_key = document.getElementById(pressKey);
@@ -207,4 +206,6 @@ function monitorKeyboard() {
         }
 
     }
+
+
 }
